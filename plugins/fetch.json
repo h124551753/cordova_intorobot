@@ -1,0 +1,199 @@
+{
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-camera": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-camera"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-dialogs"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-vibration": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-vibration"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-network-information": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-network-information"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-geolocation"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.knowledgecode.cordova.websocket": {
+        "source": {
+            "type": "registry",
+            "id": "com.knowledgecode.cordova.websocket"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-file": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-file"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "uk.co.whiteoctober.cordova.appversion": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/whiteoctober/cordova-plugin-app-version.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "xu.li.cordova.wechat": {
+        "source": {
+            "type": "local",
+            "path": "temp/cordova-plugin-wechat-develop"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WECHATAPPID": "wxdf2201ec721b1daf"
+        }
+    },
+    "cordova-plugin-file-transfer": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-file-transfer"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.apache.cordova.splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.splashscreen"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.molmc.intorobot.statusbar": {
+        "source": {
+            "type": "local",
+            "path": "temp/com.molmc.intorobot.statusbar"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-zip": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-zip@3.0.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-datepicker": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-datepicker@0.8.9"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-qqsdk": {
+        "source": {
+            "type": "local",
+            "path": "temp/cordova-plugin-qqsdk"
+        },
+        "is_top_level": true,
+        "variables": {
+            "QQ_APP_ID": "1104708258"
+        }
+    },
+    "com.pylonproducts.wifiwizard": {
+        "source": {
+            "type": "local",
+            "path": "temp/com.pylonproducts.wifiwizard"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-networkinterface": {
+        "source": {
+            "type": "local",
+            "path": "temp/cordova-plugin-networkinterface"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-chrome-apps-common": {
+        "source": {
+            "type": "local",
+            "path": "temp/cordova-plugin-chrome-apps-common"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-chrome-apps-iossocketscommon": {
+        "source": {
+            "type": "local",
+            "path": "temp/cordova-plugin-chrome-apps-iossocketscommon"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-chrome-apps-sockets-udp": {
+        "source": {
+            "type": "local",
+            "path": "temp/cordova-plugin-chrome-apps-sockets-udp"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.molmc.intorobot.wificonfig": {
+        "source": {
+            "type": "local",
+            "path": "temp/com.molmc.intorobot.wificonfig"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.icubespace.cordova_esptouch": {
+        "source": {
+            "type": "local",
+            "path": "temp/com.icubespace.cordova_esptouch"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

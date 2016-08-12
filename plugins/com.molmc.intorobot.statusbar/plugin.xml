@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--插件id号，与package.json保持一致 版本号，与package.json保持一致-->
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.molmc.intorobot.statusbar" version="0.1">
+    <!--插件在cordova下的名称，Test.js中exec的接口名称，保持一致-->
+    <name>StatusBarNotification</name>
+    <description>Cordova Plugin</description>
+    <license>Apache 2.0</license>
+    <!--与package.json保持一致-->
+    <keywords></keywords>
+    <repo></repo>
+    <issue></issue>
+    <!--插件js接口文件配置信息，插件在android-->
+    <!--src="www/Test.js"为已经写好的js文件路径，与js中调用的类名保持一致-->
+    <js-module src="www/StatusBarNotification.js" name="NotificationMessenger">
+        <!--插件在js中调用的类名-->
+        <clobbers target="navigator.StatusBarNotification" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <!--插件在java端的接口名称，与之前文件中的接口名称保持一致-->
+            <feature name="StatusBarNotification">
+                <!--该插件接口对应的java代码路径-->
+                <param name="android-package" value="com.molmc.intorobot.statusbar.StatusBarNotification"/>
+            </feature>
+        </config-file>
+
+        <!--源文件的路径和目标文件路径，src为已经编写好的java代码路径，target-dir为需要生成的android工程中该java源码路径，与上面的java代码路径保持一致-->
+        <source-file src="src/android/StatusBarNotification.java" target-dir="src/com/molmc/intorobot/statusbar"/>
+        <source-file src="src/android/StatusNotificationIntent.java" target-dir="src/com/molmc/intorobot/statusbar"/>
+    </platform>
+
+</plugin>
+

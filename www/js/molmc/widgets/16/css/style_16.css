@@ -1,0 +1,10 @@
+#widget16 #img_temperature{
+    background: url(../img/temperature.png) no-repeat;
+    height: 25px;
+    width: 15px;
+    background-size: 15px 25px;
+    position: absolute;
+    margin-top:-5px;
+    margin-left:-10px;
+    z-index: -1;
+}

@@ -1,0 +1,6 @@
+1、设置android目标sdk为19，最小版本为14即android4.0
+2、在AndroidManifest.xml中设置android:windowSoftinputMode="adjustPan"软件盘输入
+3、禁止app横屏设置：anroid:screenOrientation="portrait"
+4、微信分享对应的签名文件keystore需要在微信开发者帐号中修改
+
+scp 文件到server中是需要修改用户权限，命令为chmod -R 用户名：用户组 文件夹。 如 chmod -R openresty:openresty downloads/

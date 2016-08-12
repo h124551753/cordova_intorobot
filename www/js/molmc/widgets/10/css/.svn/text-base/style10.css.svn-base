@@ -1,0 +1,24 @@
+#widget10 #emergency-disp0 {
+  /*position:absolute;*/
+  /*top:20%;
+  left:70%;*/
+  /*float: right;*/
+  width:300px;
+  height:400px;
+  background:url(../img/emergency.png) -600px 0 no-repeat;
+  /*cursor:move;
+  z-index:800;*/
+}
+#widget10 #emergency-disp1 {
+  width:300px;
+  height:400px;
+  /*display:none;*/
+  background:url(../img/emergency.png) 0 0 no-repeat;
+}
+
+#widget10 #emergency-disp2 {
+  width:300px;
+  height:400px;
+  /*display:none;*/
+  background:url(../img/emergency.png) -300px 0 no-repeat;
+}

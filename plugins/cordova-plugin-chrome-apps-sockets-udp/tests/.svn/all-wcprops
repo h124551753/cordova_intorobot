@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/app_repos/!svn/ver/655/cordova/intorobot/plugins/cordova-plugin-chrome-apps-sockets-udp/tests
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/app_repos/!svn/ver/655/cordova/intorobot/plugins/cordova-plugin-chrome-apps-sockets-udp/tests/plugin.xml
+END
+tests.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/app_repos/!svn/ver/655/cordova/intorobot/plugins/cordova-plugin-chrome-apps-sockets-udp/tests/tests.js
+END

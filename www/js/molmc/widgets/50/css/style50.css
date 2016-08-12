@@ -1,0 +1,82 @@
+#widget50 #wastebin{
+    width: 200px;
+    height: 200px;
+    /*position: relative;*/
+    /*top:160px;*/
+    margin: 0px auto;
+    margin-top: 160px;
+}
+#widget50 #wastebin:before{
+    content: '';
+    width: 200px;
+    height: 29px;
+    display: block;
+    background: url(../img/wastebin.png) 0px 0px no-repeat;
+    transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -webkit-transform-origin:0 100%;
+    -o-transform-origin:0 100%;
+}
+#widget50 #wastebin:after{
+    content: '';
+    width: 200px;
+    height: 171px;
+    display: block;
+    background: url(../img/wastebin.png) 0px -30px no-repeat;
+}
+
+#widget50 #wastebin.openWastebin:before{
+    -webkit-animation: openWastebin 1s ease forwards;
+    -moz-animation: openWastebin 1s ease forwards;
+    -o-animation: openWastebin 1s ease forwards;
+    animation: openWastebin 1s ease forwards;
+}
+
+@keyframes openWastebin
+{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-105deg);
+    }
+}
+
+@-moz-keyframes openWastebin /* Firefox */
+{
+    0%{
+        -moz-transform: rotate(0);
+    }
+    100%{
+        -moz-transform: rotate(-105deg);
+    }
+}
+
+@-webkit-keyframes openWastebin /* Safari 和 Chrome */
+{
+    0%{
+        -webkit-transform: rotate(0);
+    }
+    100%{
+        -webkit-transform: rotate(-105deg);
+    }
+}
+
+@-o-keyframes openWastebin /* Opera */
+{
+    0%{
+        -o-transform: rotate(0);
+    }
+    100%{
+        -o-transform: rotate(-105deg);
+    }
+}
+
+#widget50 button{
+    text-align: center;
+    padding: 5px 20px;
+    margin: 10px 5px;
+}
+#widget50 button.active{
+    background: rgba(60, 114, 230, .8);
+}

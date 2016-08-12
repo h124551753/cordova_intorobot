@@ -1,0 +1,180 @@
+#widget31 .pulse {
+    height: 100px;
+    width: 200px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background:0 0 no-repeat;
+    -webkit-animation: 2s widget31pulse linear infinite;
+    -moz-animation: 2s widget31pulse linear infinite;
+    -o-animation: 2s widget31pulse linear infinite;
+    animation: 2s widget31pulse linear infinite;
+}
+#widget31 .heartBg{
+    /*background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke-width="1px" stroke="red" d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z" /></svg>') 0 0 no-repeat;
+    background-position-x: 50px;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    z-index: 10;*/
+    height: 100px;
+    width: 200px;
+    /*overflow: hidden;*/
+    position: relative;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+}
+#widget31 .heartBg:before{
+    content: '';
+    background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke-width="0.5px" stroke="red" d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z" /></svg>') 0 0 no-repeat;
+    background-position: 50px -10px;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/*#widget31 .pulse:after {
+    content: '';
+    display: block;
+    background:0 0 no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-animation: 2s widget31pulse linear infinite;
+    -moz-animation: 2s widget31pulse linear infinite;
+    -o-animation: 2s widget31pulse linear infinite;
+    animation: 2s widget31pulse linear infinite;
+}*/
+/*#widget31 .pulse:before {
+    content: '';
+    background: #444;
+    position: absolute;
+    z-index: -1;
+    left: 2px;
+    right: 2px;
+    bottom: 0;
+    top: 16px;
+    margin: auto;
+    height: 3px;
+}*/
+@-webkit-keyframes widget31pulse {
+    0% {
+        clip: rect(0, 0, 100px, 0);
+    }
+    10% {
+        clip: rect(0, 66.66667px, 100px, 0);
+    }
+    38% {
+        clip: rect(0, 133.33333px, 100px, 0);
+    }
+    48% {
+        clip: rect(0, 200px, 100px, 0);
+    }
+    52% {
+        clip: rect(0, 200px, 100px, 0);
+    }
+    62% {
+        clip: rect(0, 200px, 100px, 66.66667px);
+    }
+    90% {
+        clip: rect(0, 200px, 100px, 133.33333px);
+    }
+    100% {
+        clip: rect(0, 200px, 100px, 200px);
+    }
+}
+@-moz-keyframes widget31pulse /* Firefox */
+{
+    0% {
+        clip: rect(0, 0, 100px, 0);
+    }
+    10% {
+        clip: rect(0, 66.66667px, 100px, 0);
+    }
+    38% {
+        clip: rect(0, 133.33333px, 100px, 0);
+    }
+    48% {
+        clip: rect(0, 200px, 100px, 0);
+    }
+    52% {
+        clip: rect(0, 200px, 100px, 0);
+    }
+    62% {
+        clip: rect(0, 200px, 100px, 66.66667px);
+    }
+    90% {
+        clip: rect(0, 200px, 100px, 133.33333px);
+    }
+    100% {
+        clip: rect(0, 200px, 100px, 200px);
+    }
+}
+
+@-o-keyframes widget31pulse /* Opera */
+{
+    0% {
+        clip: rect(0, 0, 100px, 0);
+    }
+    10% {
+        clip: rect(0, 66.66667px, 100px, 0);
+    }
+    38% {
+        clip: rect(0, 133.33333px, 100px, 0);
+    }
+    48% {
+        clip: rect(0, 200px, 100px, 0);
+    }
+    52% {
+        clip: rect(0, 200px, 100px, 0);
+    }
+    62% {
+        clip: rect(0, 200px, 100px, 66.66667px);
+    }
+    90% {
+        clip: rect(0, 200px, 100px, 133.33333px);
+    }
+    100% {
+        clip: rect(0, 200px, 100px, 200px);
+    }
+}
+
+@keyframes widget31pulse {
+    0% {
+        clip: rect(0, 0, 100px, 0);
+    }
+    10% {
+        clip: rect(0, 66.66667px, 100px, 0);
+    }
+    38% {
+        clip: rect(0, 133.33333px, 100px, 0);
+    }
+    48% {
+        clip: rect(0, 200px, 100px, 0);
+    }
+    52% {
+        clip: rect(0, 200px, 100px, 0);
+    }
+    62% {
+        clip: rect(0, 200px, 100px, 66.66667px);
+    }
+    90% {
+        clip: rect(0, 200px, 100px, 133.33333px);
+    }
+    100% {
+        clip: rect(0, 200px, 100px, 200px);
+    }
+}

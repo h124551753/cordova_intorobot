@@ -1,0 +1,30 @@
+#widget15 .rowSlider{
+    text-align: center;
+}
+
+#widget15 .rowSlider .depict{
+    line-height: 34px;
+    width: 15%;    
+}
+
+#widget15 .rowSlider .slider{
+    width: 55%;
+    height: 14px;
+    float: left;
+    background-clip: padding-box;
+}
+
+#widget15 .rowSlider label{
+    width: 15%;
+    float: right;
+}
+
+#widget15 button{
+    padding: 6px 6px;
+    margin: 0px auto;
+}
+
+#widget15 .depict{
+    float: left;
+    width: 100%;
+}

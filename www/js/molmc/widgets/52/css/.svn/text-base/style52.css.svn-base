@@ -1,0 +1,70 @@
+#widget52 #tinyCloud{
+    width: 300px;
+    height: 230px;
+    margin: 0px auto;
+    /*position: relative;*/
+    /*top: 30px;*/
+    background: url(../img/cloud.png) 0px 0px no-repeat;
+}
+#widget52 #tinyCloud.tinyOpen{
+    background: url(../img/cloud.png) -300px 0px no-repeat;
+}
+
+#widget52 button{
+    text-align: center;
+    padding: 5px 20px;
+    margin: 10px 5px;
+    margin-top: 30px;
+}
+#widget52 button.open{
+    background: rgb(100, 15, 179);
+    -webkit-animation: flicker 0.2s infinite alternate;
+    -moz-animation: flicker 0.2s infinite alternate;
+    -o-animation: flicker 0.2s infinite alternate;
+    animation: flicker 0.2s infinite alternate;
+}
+
+#widget52 button.active{
+    background: rgba(60, 114, 230, .8);
+}
+
+@keyframes flicker
+{
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@-moz-keyframes flicker /* Firefox */
+{
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes flicker /* Safari 和 Chrome */
+{
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-o-keyframes flicker /* Opera */
+{
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}

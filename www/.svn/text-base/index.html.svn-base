@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="connect-src * 'unsafe-eval'; object-src 'self'; style-src * 'unsafe-inline'; img-src *">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/css/icons.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/css/main.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/css/appframework.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/css/lists.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/css/forms.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/css/buttons.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/css/badges.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/css/grid.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/css/android.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/css/ios.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/css/ios7.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/plugins/css/af.actionsheet.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/plugins/css/af.popup.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/plugins/css/af.scroller.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/app_framework/plugins/css/af.selectBox.css"
+        />
+        <link rel="stylesheet" type="text/css" href="js/vendor/font-awesome-4.3.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="css/function.css"/>
+        <link rel="stylesheet" type="text/css" href="css/app.css"/>
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/appframework.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/plugins/af.actionsheet.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/plugins/af.css3animate.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/plugins/af.passwordBox.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/plugins/af.scroller.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/plugins/af.selectBox.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/plugins/af.touchEvents.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/plugins/af.touchLayer.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/plugins/af.popup.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/ui/appframework.ui.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/ui/transitions/fade.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/ui/transitions/flip.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/ui/transitions/pop.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/ui/transitions/slide.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/ui/transitions/slideDown.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/ui/transitions/slideUp.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/app_framework/plugins/af.slidemenu.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/Swiper/swiper.min.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/simple-traditional.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="http://maps.google.cn/maps/api/js?sensor=false&libraries=places">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="cordova.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/molmc/lang.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="js/molmc/utils.js">
+        </script>
+        <script type="text/javascript" charset="utf-8">
+            $.ui.useOSThemes = false;
+            $.ui.overlayStatusbar = true;
+            $.ui.autoLaunch = false;
+            $.ui.openLinksNewTab = false;
+            $.ui.splitview = false;
+            $.ui.animateHeaders = false;
+            $(document).ready(function() {
+                console.log("document ready..");                
+                if ($.molmc.utils.getItem("autoLogin") == "true") {
+                    $("#login").removeAttr("selected");
+                    $("#device").attr("selected", true);
+                }
+                $.ui.launch();
+            });
+        </script>
+        <title>
+            IntoRobot
+        </title>
+    </head>
+    
+    <body>
+        <div id="afui">
+            <div id="content">
+                <!-- 用户信息 -->
+                <div class="panel" data-title="登录" id="login" data-header="header_login" data-footer="none">
+                    <form>             
+                        <p>
+                            <label class="leftico">
+                                <i class="fa fa-user"></i>
+                            </label>
+                            <input type="email" id="account_login" placeholder="请输入邮箱" class="icoinput"/>
+                        </p>
+                        <p>
+                            <label class="leftico">
+                                <i class="fa fa-lock"></i>
+                            </label>
+                            <input type=password id="pwd_login" placeholder="请输入密码" class="icoinput"
+                            />
+                        </p>
+                        <p>
+                            <p style="display:none;">
+                                <label class="floleft" id="text_autologin_login">
+                                    记住密码并自动登录
+                                </label>
+                                <input id="toggle_login" type="checkbox" value="1" class="toggle floright" />
+                                <label style="left:auto;background-clip: padding-box;height:23px" for="toggle_login" data-on="Yes" data-off="No" class="floright midtoggle" id="isremember">
+                                    <span style="top:-3px">
+                                    </span>
+                                </label>
+                            </p>
+                            <div style="clear:both">
+                            </div>
+                        </p>
+                        <a class="button block btn_large_blue" id="btn_login">
+                            登 录
+                        </a>
+                        <div class="mid" style="margin-top:20px;">
+                            <a href="#register" id="goToRegister" style="float:right;">
+                                注册
+                            </a>
+                            <a href="#forgetpw" id="goToForgetPwd" style="float:left;">
+                                找回密码
+                            </a>
+                        </div>
+                    </form>
+                    <hr style="height:1px;border:none;position: absolute;bottom:124px;border-top:1px solid #cccccc;width:100%;display:none;" />
+                    <div class="mid" style="bottom: 115px;position:absolute;display:none;">
+                        <span id="title_login_i" style="background:#F2F2F2; padding:0 10px;">使用帐号登录</span>
+                    </div>
+                    <div class="mid" id="ico_login" style="position:absolute;bottom:55px;text-align:left;margin-left:20px;display:none;">
+                        <img id="wechat_login" class="picpressed" style="width: 40px;" src="img/appwx_logo.png" />
+                        <img id="qq_login" class="picpressed" style="width: 40px;margin-left: 30px;" src="img/QQ256X256.png" />
+                    </div>  
+                </div>
+                
+                <!-- 注册 -->
+                <div class="panel" data-title="注册" id="register" data-header="header_register"
+                data-footer="none">
+                    <form id="form_register">
+                        <p>
+                            <label class="leftico">
+                                <i class="fa fa-user"></i>
+                            </label>
+                            <input type="text" id="name_register" placeholder="请输入昵称" class="icoinput"
+                            />
+                        </p>
+                        <p>
+                            <label class="leftico">
+                                <i class=" fa fa-envelope-o"></i>
+                            </label>
+                            <input type="email" id="email_register" placeholder="请输入注册邮箱" class="icoinput"
+                            />
+                        </p>
+                        <p>
+                            <label class="leftico">
+                                <i class=" fa fa-lock"></i>
+                            </label>
+                            <input type="password" id="pwd_register" maxlength="20" placeholder="请输入密码" class="icoinput"
+                            />
+                        </p>
+                        <div>
+                            <input type="text" id="vldcode_register" style="width:65%;" class="vldcode_register" placeholder="验证码" />
+                            <img id="vld_register" class="floright" />
+                            <div style="clear:both">
+                            </div>
+                        </div>
+                        <a class="button block btn_large_blue" id="btn_register">
+                            注 册
+                        </a>
+                    </form>
+                    <div class="mid" id="goToPhoneReg" style="position:absolute;text-align:center;bottom:30px;left:0px;display:none;">
+                        <a href="#register_phone" style="text-decoration:none">
+                            <i class="fa fa-mobile fa-lg"></i> 手机注册
+                        </a>
+                    </div>
+                </div>
+                <!-- 手机注册帐号 -->
+                <div class="panel" data-title="手机注册" id="register_phone" data-header="header_register"
+                data-footer="none">
+                    <form id="form_regphone">
+                        <p>
+                            <label class="leftico">
+                                <i class=" fa fa-user"></i>
+                            </label>
+                            <input type="text" id="name_regphone" placeholder="请输入昵称" class="icoinput"
+                            />
+                        </p>
+                        <p>
+                            <label class="leftico">
+                                <i class="fa fa-mobile fa-lg"></i>
+                            </label>
+                            <input type="tel" id="phone_zone" placeholder="+86" value="+86" class="icoinput" style="width:25%;text-align:center;display:none;"/>
+                            <input type="tel" id="phone_regphone" placeholder="请输入注册手机号" class="icoinput" style="width:100%;"/>
+                        </p>
+                        <p>
+                            <label class="leftico">
+                                <i class=" fa fa-lock"></i>
+                            </label>
+                            <input type="password" id="pwd_regphone" maxlength="20" placeholder="请输入密码" class="icoinput"
+                            />
+                        </p>
+                        <div>
+                            <input class="vldcode_regphone" style="width:65%;display:none;" type="text" id="vldcode_regphone" placeholder="验证码" />
+                            <img id="vld_regphone" class="floright" />
+                            <div style="clear:both">
+                            </div>
+                        </div>                        
+                        <a class="button block btn_large_blue" id="btn_getVldPhone">
+                            获取手机验证码
+                        </a>
+                    </form>
+                    <div class="mid" style="position:absolute;text-align:center;width:100%;bottom:30px;left:0px;">
+                        <a href="#register" class="fa fa-envelope-square" style="text-decoration:none">
+                            邮箱注册
+                        </a>
+                    </div>
+                </div>
+                <div class="panel" id="vld_register_phone" data-header="header_register" data-footer="none">
+                    <div class="mid" style="margin-top:20px;">已发送验证短信到:</div>
+                    <div id="targetPhone" class="sendphone mid margintop10" style="font-size:2em;color:#00AEEF;">18588262464</div>
+                    <form id="form_regphone" class="margintop10">
+                        <div>
+                            <input type="number" id="vldcodephone_regphone" style="width:50%;" placeholder="请输入短信验证码" />
+                            <a id="regetVld" class="button floright" value="1" style="width:45%;line-height:38px;padding:0 5px;border-radius:5px;border-width:1px;border:1px solid #ccc;margin:0px;color:#585C63;font-weight:bold;"><span id=sec_count>90</span><span id=count_txt>秒后重新获取</span></a>
+                            <div style="clear:both">
+                            </div>
+                        </div>                        
+                        <a class="button block btn_large_blue" id="btn_regphone">
+                            立即注册
+                        </a>
+                    </form>
+                </div>
+                <!-- 绑定帐号 -->
+                <div class="panel" data-title="绑定" id="bind" data-header="header_register" data-footer="none">                    
+                    <div class="mid" style="margin-top:40px">
+                        <img id="auth_head" style="width:64px;height:64px;border-radius:4px;" src="img/app_icon.png" />
+                    </div>
+                    <div style="width:100%;padding-left:5px;margin-top:20px;"><strong id="usrtext_bind">温馨提示:</strong></div>
+                    <div style="height:32px;padding-left:5px;font-size:13px;margin-top:5px;">
+                        如果您还没有注册帐号，请先注册帐号并激活后再进行绑定                          
+                    </div>
+                    <form id="form_bind" style="margin-top:10px;">                        
+                        <p>
+                            <label class="leftico">
+                                <i class="fa fa-envelope-o"></i>
+                            </label>
+                            <input type="email" id="email_bind" placeholder="请输入注册邮箱" class="icoinput"
+                            />
+                        </p>
+                        <p>
+                            <label class="leftico">
+                                <i class="fa fa-lock"></i>
+                            </label>
+                            <input type="password" id="pwd_bind" maxlength="20" placeholder="请输入密码" class="icoinput"
+                            />
+                        </p>
+                        <a class="button block btn_large_blue" style="margin-top:20px;" id="btn_bind">
+                            绑 定
+                        </a>
+                    </form>
+                </div>
+                <!-- 用户协议-->
+                <div class="panel" data-title="用户协议" id="user_protocol_zh" data-footer="none">
+                    <span class="textspan" style="margin:20px">
+                        <p>
+                            本协议是您(个人或单一实体)与摩仑公司之间关于相关产品的法律协议。一旦安装、复制或以其他方式使用本软件产品，即表示同意接受协议各项条件的约束。如果您不同意协议的条件，则不能获得使用本软件产品的权力。
+                        </p>
+                        <p>
+                            <strong>一． 软件产品保护条款</strong>
+                        </p>
+                        <p>
+                            1.本软件产品的版权归深圳市摩仑科技有限公司所有。本软件产品受中华人民共和国版权法及国际版权条约和其他知识产权法及条约的保护。用户获得的本软件产品的使用权。
+                        </p>
+                        <p>
+                            2．用户不得: 删除本软件及其他副本上一切关于版权的信息； 对本软件进行反向工程，如反汇编、反编译等。
+                        </p>
+                        <p>
+                            3.如果您未遵守本协议的任何一项条款，摩仑公司有权立即终止本协议，并保留通过法律手段追究责任。
+                        </p>
+                        <p>
+                            4.使用本软件产品由用户自己承担风险，在适用法律允许的最大范围内，摩仑公司在任何情况下不就因使用或不能使用本软件产品所发生的特殊的、意外的、非直接或间接的损失承担赔偿责任。即使已事先被告知该损害发生的可能性。
+                        </p>
+                        <p>
+                            <strong>二． 用户使用须知</strong>
+                        </p>
+                        <p>
+                            特别提醒用户，使用互联网必须遵守国家有关的政策和法律，如刑法、国家安全法、保密法、计算机信息系统安全保护条例等，保护国家利益，保护国家安全，对于违法使用互联网络而引起的一切责任，由用户负全部责任。
+                        </p>
+                        <p>
+                            1.用户不得使用该软件发送或传播敏感信息和违反国家法律制度的信息。
+                        </p>
+                        <p>
+                            2.该软件同大多数因特网软件一样，易受到各种安全问题的困扰，包括：透露详细个人资料，被不法分子利用，造成现实生活中的骚扰。哄骗、破译密码。下载安装的其它软件中可能含有"特洛伊木马"等病毒，威胁到个人计算计上信息和数据的安全，继而威胁对绑定设备的使用。
+                        </p>
+                        <p>
+                            3.用户应加强个人资料的保护意识，以免对个人生活造成不必要的骚扰。
+                        </p>
+                        <p>
+                            4.使用该软件，要注意个人密码和公开邮箱的密码保护（密码应多于8位，并包含字母和数字）。
+                        </p>
+                        <p>
+                            5.盗取他人用户号码或利用网络通讯骚扰他人，均属于非法行为。用户不得采用测试、欺骗等任何非法手段，盗取其他用户的账号和对他人进行骚扰。
+                        </p>
+                        <p>
+                            6.如有其它衍生工具均非摩仑公司开发。下载、安装、启动此类软件，将有可能受到各种即刻或长期风险的威胁，对他人构成骚扰，更是违反法律行为。建议用户不要轻易下载和使用这类工具。
+                        </p>
+                        <p>
+                            7.青少年上网应该在父母和老师的指导下，正确学习使用网络。青少年避免沉迷虚拟的网络世界而影响了日常的学习生活。
+                        </p>
+                        <p>
+                            8.用户注册账号后，如果长期不使用，我公司有权注销账户，以免造成资源浪费。
+                        </p>
+                        <p>
+                            摩仑公司具有对以上各项条款的最终解释权
+                        </p>
+                        <p style="text-align:right;padding-right:2em;">
+                            <strong>
+                                深圳市摩仑科技有限公司
+                            </strong>
+                        </p>
+                    </span>
+                </div>
+            
+                <div class="panel" data-title="User protocol" id="user_protocol_en" data-footer="none">
+                    <span class="textspan" style="padding:10px;text-align:justify;">
+                        <p>
+                            The Agreement is a legal agreement on related products between you (an individual or a single entity) and Shenzhen MOLMC Technology Limited.Once installed, copying or using the SOFTWARE PRODUCT in any other way, you agree to be bound by the terms and conditions of the agreement. If you do not agree with terms of the agreement, you can not get the power to use this software product.
+                        </p>
+                        <p>
+                            <strong>Software Product Protection Clause</strong>
+                        </p>
+                        <p>
+                            1.The software product is copyrighted by Shenzhen MOLMC Technology Limited (aka MOLMC, afterwards), and is protected by the copyright law of the People's Republic of China and the international copyright treaties and other intellectual property laws and treaties. user\`s right to use the software product.
+                        </p>
+                        <p>
+                            2.Users cannot delete any the information about the copyright on the software and other copies; cannot reverse engineering to the software, such as disassembly, decompilation etc.
+                        </p>
+                        <p>
+                            3.If you fail to comply with any provision of this agreement, MOLMC reserves the right to immediately terminate this agreement and retain legally accountable.
+                        </p>
+                        <p>
+                            4.Use of the software product by the user's own risk, to the fullest extent permitted by applicable law, MOLMC does not under any circumstances arise out of the use or inability to use the software products of special, incidental, indirect or consequential loss liability, even if you have been told the possibility of such damages.
+                        </p>
+                        <p>
+                            <strong>User Notice</strong>
+                        </p>
+                        <p>
+                            To remind the user to use the Internet must abide by relevant state policies and laws, such as criminal law, national security law, secrecy laws, regulations on protection of computer information system security, etc., to protect national interests.
+The protection of national security, all responsibility for the illegal use of the Internet caused by the user take full responsibility.
+                        </p>
+                        <p>
+                            1.You may not use the software to send or transmit sensitive information and violation of national legal systems information.
+                        </p>
+                        <p>
+                            2.The software with the most Internet software, easy to suffer from a variety of security issues, including: disclose personal details, are unscrupulous elements, resulting in real-life harassment, trick, breaking the code. Other software to download and install may contain "Trojan horses" and other viruses, the threat to personal computing count on security of information and data, and then the threat of the use of binding equipment.
+                        </p>
+                        <p>
+                            3.Users should strengthen the awareness of personal data protection, so as to avoid unnecessary harassment of personal life.
+                        </p>
+                        <p>
+                            4.Use the software should pay attention to your personal password and public mailbox's  password protected (password should be more than 8digits, and contain letters and numbers).
+                        </p>
+                        <p>
+                           5.Others steal user number or using the network communications to harass others, are illegal. Users may not use any unlawful means test, deception, stealing other user's account and harass others.
+                        </p>
+                        <p>
+                            6.If other derivatives are non MOLMC developed. Download, installation, start such software, there will be immediate or may be subject to a variety of threats to the long-term risk to harassment of, but violations of the law. We do not recommend that users download and use such tools.
+                        </p>
+                        <p>
+                            7.Youngsters should be under the guidance of parents and teachers, to learn the correct use of the network. Teen avoid indulging in the virtual online world and affected the daily life of learning.
+                        </p>
+                        <p>
+                            8.Users registered account, if the long-term do not use, the company have the right to cancel the account, to avoid wastage of resources.
+                        </p>
+                        <p>
+                            MOLMC company has the power of final interpretation of the above provisions.
+                        </p>
+                        <p style="text-align:right;padding-right:2em;">
+                            <strong>
+                                Shenzhen MOLMC Technology Limited
+                            </strong>
+                        </p>
+                    </span>
+                </div>
+                <!-- 重置密码 -->
+                <div class="panel " data-title="找回密码" id="forgetpw" data-footer="none">
+                    <h3 style="margin:20px;margin-left:5px">
+                        输入注册的邮箱
+                    </h3>
+                    <label class="leftico">
+                        <i class="fa fa-user"></i>
+                    </label>
+                    <input type="email" id="account_forgetpw" placeholder="请输入注册邮箱" class="icoinput" />
+                    <a class="button block btn_large_blue" id="btn_forgetpw">
+                        下 一 步
+                    </a>
+                </div>
+                <div class="panel" data-title="找回密码" id="resetpw" data-footer="none">
+                    <label class="leftico" style="margin-top:20px">
+                        <i class="fa fa-lock"></i>
+                    </label>
+                    <input type="password" id="newpw_resetpw" maxlength="20" placeholder="请输入新密码" class="icoinput"
+                    style="margin-top:20px" />
+                    <label class="leftico">
+                        <i class="fa fa-lock"></i>
+                    </label>
+                    <input type="password" id="repw_resetpw" maxlength="20" placeholder="再次输入密码" class="icoinput"
+                    />
+                    <label class="leftico">
+                        <i class="fa fa-key"></i>
+                    </label>
+                    <input type="text" id="verify" placeholder="输入邮箱收到的验证码" class="icoinput"
+                    />
+                    <a class="button block btn_large_blue" id="btn_resetpw">
+                        确认修改密码
+                    </a>
+                </div>
+                <!-- 重置密码 -->
+                <div class="panel" data-title="重置密码" id="resetpassword" data-tab="navbar_about" data-footer="footer">
+                    <label class="leftico" style="margin-top:20px">
+                        <i class="fa fa-lock"></i>
+                    </label>
+                    <input type="password" id="old_resetpassword" maxlength="20" placeholder="请输入旧密码" class="icoinput" style="margin-top:20px"
+                    />
+                    <label class="leftico">
+                        <i class="fa fa-key"></i>
+                    </label>
+                    <input type="password" id="newpw_resetpassword" maxlength="20" placeholder="请输入新密码" class="icoinput" />
+                    <label class="leftico">
+                        <i class="fa fa-key"></i>
+                    </label>
+                    <input type="password" id="repw_resetpassword" maxlength="20" placeholder="再次输入密码" class="icoinput"
+                    />                    
+                    <a class="button block btn_large_blue" id="btn_resetpassword">
+                        确认修改密码
+                    </a>
+                </div>
+                <!-- 我的设备 -->
+                <div class="panel" data-title="device" id="device" data-tab="navbar_device"
+                data-header="header_device" data-footer="footer">
+                    <ul class="list" id="deviceList_device" style="margin-top:5px;">
+                        <div style="font-size: 1.5em;text-align: center;margin-top: 50%; color: darkgray; background: #F2F2F2;">
+                            <div>
+                                <a class="fa fa-plus-circle" style="font-size: 4em;color: darkgray;" id="addDeviceEmpty">
+                                </a>
+                            </div>
+                            <span>
+                                请点击添加设备
+                            </span>
+                        </div>
+                    </ul>
+                </div>
+                <div class="panel" data-title="widgets_device" id="widgets_device" data-tab="navbar_device"
+                data-header="header_device" data-footer="footer">
+                    <ul class="list" id="widgetList_device" style="margin-top:5px;">
+                    </ul>
+                </div>
+                <div class="panel" id="showWidget_device" data-tab="navbar_device" data-header="header_device" data-footer="footer">
+                    <div id="widgetPanel_device" style="padding-top: 10px">
+                    </div>
+                </div>
+                <!-- 示例设备 -->
+                <div class="panel" data-title="参考设备" id="demo_device" data-tab="navbar_device"
+                data-footer="footer">
+                    <ul class="list " id="demoList_device" style="margin-top:5px;">
+                        <div style="font-size: 1.5em;text-align: center;margin-top: 50%; color: darkgray; background: #F2F2F2;">
+                            <span>
+                                没有参考设备
+                            </span>
+                        </div>
+                    </ul>
+                </div>
+            
+                <!-- 配置设备步骤1 -->
+                <div class="panel" id="step1_configdev" data-tab="navbar_device" data-header="header_configstep1_device" data-footer="footer">
+                    <h2 id="config_dev_text" style="margin-top:10px;height:auto;">
+                        欢迎使用摩仑产品，使用步骤如下：
+                    </h2>
+                    <ul class="ulinherit ">
+                        <li id="config_dev_step1" style="list-style-type:none;">
+                            长按Atom设备右上角处按钮3秒钟，直到Atom设备下方三色LED灯闪<span style="color:red">红灯</span>，松开按钮，Atom设备进入配置模式，进入下一步;
+                        </li>
+                    </ul>
+                    <div class="mid" style="margin-top:15px;" id="img_dev">
+                        <img src="img/board.png">
+                    </div>
+                    <span id="redlight_device" class="fa fa-square" style="color:black;position:relative;top:-60px;left:48.5%;"></span>
+                    <span id="press_btn_device" class="fa fa-long-arrow-left" style="color:#B300FF;position:relative;top:-255px;left:255px;font-size:1.3em;">
+                    </span>
+                </div>
+            
+                <!-- 配置设备步骤2 -->
+                <div class="panel" id="deviceconfig" data-tab="navbar_device" data-header="header_configstep_device" data-footer="footer">
+                    <h2 id="configinfo1" style="margin-bottom:20px">
+                        欢迎使用摩仑产品，使用步骤如下：
+                    </h2>
+                    <ul class="ulinherit">
+                        <li id="configinfo2">
+                            启动Atom设备;
+                        </li>
+                        <li id="configinfo3" style="margin-top:10px;margin-bottom:10px">
+                            找到相应的设备名称并选中;
+                        </li>
+                        <li id="configinfo4" style="margin-bottom:20px;">
+                            为Atom配置网络环境。
+                        </li>
+                    </ul>
+                    <h4 id="config_device" class="margintop10">
+                        Atom设备ssid
+                    </h4>
+                    <div id="devssidList" class="margintop10">
+                        <select name="devicelist" class="disablediv">
+                            <option value="molmc">
+                            </option>
+                        </select>
+                    </div>
+                    <h4 id="config_wifi" class="margintop10">
+                        WiFi名称
+                    </h4>
+                    <div id="wifissidList" class="margintop10">
+                        <select name="wifilist">
+                            <option value="molmc">
+                            </option>
+                        </select>
+                    </div>
+                    <h4 id="config_pwd" class="margintop10">
+                        WiFi密码
+                    </h4>
+                    <div>
+                        <span id=pwdbox>
+                            <input class="margintop10 disablediv" name="wifipwd" type="password" id="wifipwd_config" placeholder="输入wifi网络密码">
+                        </span>
+                        <i class="fa fa-eye" id="display_pwd" value="0" style="position:relative;bottom:38px;float:right;margin-right:15px;color:gray;"></i>
+                    </div>
+                    <div style="text-align:center;">
+                        <div class="lar86loading" id="round_bottom_device" style="margin-top:34px;line-height: 86px;background-color:#a2a1a2;">
+                        </div>
+                        <button class="button block btn_large_gray loading" style="margin-top:42px;z-index:6"
+                        value="0" id="btn_devconfig">
+                            配 置
+                        </button>
+                        <div class="lar78loading" id="text_cannel_device" style="margin-top:38px;line-height: 78px;z-index: 4;border:4px solid #464646;">
+                        </div>
+                    </div>
+                    <div style="height:1px;width:1px;margin-top:120px;"></div>
+                    <span class="fa-stack fa-lg" style="display:none;">
+                        <i class="fa fa-circle fa-stack-2x">
+                        </i>
+                        <i class="fa fa-circle-o-notch fa-spin" style="color:green;">
+                        </i>
+                    </span>
+                </div>
+                <!-- 设备信息-->
+                <div class="panel" data-title="deviceinfo_device" id="deviceinfo_device"
+                data-header="header_devinfo_device" data-footer="footer" data-tab="navbar_device"
+                style="background-color:#F2F2F2;padding:0">
+                    <table style="width:100%;text-align:left;font-size:18px;background-color:white">
+                        <tr>
+                            <td class="devinfoleft">
+                                <img id="imginfo_device" class="picpressed" src="img/app_icon.png" style="width:80px;height:80px;border-radius:100%;"
+                                />
+                            </td>
+                            <td colspan="3" class="mpressed" id="curdev_info_device_td">
+                                <div id="curdev_info_device" class="width100" style="word-break:break-all;">
+                                    设备名称
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tabledivider" style="height:18px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="dev_city_i" class="devinfoleft">
+                                所在城市：
+                            </th>
+                            <th colspan="3" id="city_device" style="font-weight: normal;" class="font_size14">
+                                
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tabledivider">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="dev_share_i" class="devinfoleft">
+                                共享状态:
+                            </th>
+                            <th>
+                                <span colspan="2" id="curdev_isshared_device" style="font-weight: normal;"
+                                class="font_size14">
+                                    已共享
+                                </span>
+                            </th>
+                            <th class="floright">
+                                <input id="toggle_share_status" type="checkbox" value="1" class="toggle floright"
+                                />
+                                <label style="left:auto" for="toggle_share_status" data-on="开" data-off="关" class="floright rectangle" id="isshared">
+                                    <span class="rectangle">
+                                    </span>
+                                </label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tabledivider">
+                            </td>
+                        </tr>
+                        <tr id="devShareType_device">
+                            <th id="dev_setpublic_i" class="devinfoleft">
+                                设置共享:
+                            </th>
+                            <th>
+                                <span colspan="2" id="curdev_sharestatus_device" style="font-weight: normal;"
+                                class="font_size14">
+                                    只读
+                                </span>
+                            </th>
+                            <th class="floright">
+                                <input id="toggle_setshare" type="checkbox" value="1" class="toggle floright"
+                                />
+                                <label style="left:auto" for="toggle_setshare" data-on="开" data-off="关" class="floright rectangle" id="setshare">
+                                    <span class="rectangle">
+                                    </span>
+                                </label>
+                            </th>
+                        </tr>
+                        <tr id="divider_share_device">
+                            <td colspan="4" class="tabledivider">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="dev_active_i" class="devinfoleft">
+                                是否激活:
+                            </th>
+                            <th colspan="3" id="isactivate" style="font-weight: normal;" class="font_size14">
+                                否
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tabledivider">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="dev_desc_i" class="devinfoleft">
+                                设备描述:
+                            </th>
+                            <th colspan="3" id="dev_description_device" style="font-weight: normal;"
+                            class="font_size14">
+                                12345678
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel" data-title="editdevinfo_device" id="editdevinfo_device"
+                data-header="header_editdevinfo_device" data-footer="footer" data-tab="navbar_device">
+                    <h4 id="dev_editname_i" class="margintop10">
+                        设备名称:
+                    </h4>
+                    <input type="text" maxlength="30" class="margintop10" value="demo@molmc.com" />
+                    <h4 id="dev_editdesc_i" class="margintop10">
+                        设备描述:
+                    </h4>
+                    <textarea rows="3" type="text" class="margintop10" value="设备描述">
+                    </textarea>
+                </div>
+                <div class="panel" id="collectdev_device" data-tab="navbar_device" data-header="header_collectdev_device" data-footer="footer">
+                    <ul class="list " id="collectdevList_device" style="margin-top:5px;">
+                        <div style="font-size: 1.5em;text-align: center;margin-top: 50%; color: darkgray; background: #F2F2F2;">
+                            <div>
+                                <a href="#explore" class="fa fa-plus-circle" style="font-size: 4em;color: darkgray;margin-bottom:20px;"
+                                id="">
+                                </a>
+                            </div>
+                            <span>
+                                请点击添加收藏设备
+                            </span>
+                        </div>
+                    </ul>
+                </div>
+                <!-- 探索设备 -->
+                <div class="panel" data-title="explore" id="explore" data-tab="navbar_explore"
+                data-header="header_explore" data-footer="footer">
+                    <form style="margin-top:5px;margin-bottom:30px">
+                        <input type="search" placeholder="请输入搜索关键字" id="input_search_explore" style="width:70%;margin:5px; border-radius:5px;">
+                        <a class="button icon magnifier" id="btn_search_explore" style="width:25%;right:0px;height:40px;padding:10px;margin:5px 0;">
+                            search
+                        </a>
+                        <div style="height:10px">
+                        </div>
+                        <div>
+                            <span id="explore_hottag_i" style="float:left;margin-right:5px">
+                                热门标签：
+                            </span>
+                            <div style="width:50%;float:left">
+                                <span id="explore_hottag_i1" class="label_hot ">
+                                    不限
+                                </span>
+                                <span id="explore_hottag_i2" class="label_hot">
+                                    温度
+                                </span>
+                                <span id="explore_hottag_i3" class="label_hot">
+                                    开关
+                                </span>
+                            </div>
+                        </div>
+                        <a id="btn_mapsearch_i" href="#mapExplore" style="float:right; margin-right:10px;font-size:1.2em">
+                            地图搜索
+                        </a>
+                        <div style="height:10px">
+                        </div>
+                    </form>
+                    <ul class="list" id="pubDevList_explore" style="clear:both">
+                        <li>
+                            <!-- 数据加载失败-->
+                        </li>
+                    </ul>
+                </div>
+                <!-- 地图探索设备 -->
+                <div class="panel" data-title="mapExplore" id="mapExplore" data-tab="navbar_explore"
+                data-header="header_explore" data-footer="footer" data-verticalScroll='false'
+                style="overflow:hidden;">
+                    <div id="myExploreMap" style="width:100%;height:200px;">
+                    </div>
+                    <div id="myExploreMapDevices" style="position:absolute;top:200px;bottom:0px;width:100%;">
+                        <ul class="list" style="width:100%;height:100%;">
+                        </ul>
+                    </div>
+                </div>
+                <!-- 公共设备widget list -->
+                <div class="panel" data-title="widgets_explore" id="widgets_explore" data-tab="navbar_explore"
+                data-header="header_widget_explore" data-footer="footer" style="padding:0px">
+                    <table class="widget_sheel" cellspacing="0" cellpadding="0">
+                        <tr class="border_bottom">
+                            <td colspan="3">
+                                <div>
+                                    <h2 class="label_normal " id="text_devices_info">
+                                        设备信息
+                                    </h2>
+                                    <label class="fa fa-heart-o " style="float:right;margin-right:15px;margin-top:8px;font-size:20px;"
+                                    id="heart_widgets_explore">
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="center" style="padding:5px;">
+                                <img src="img/app_icon.png" style="width:80px;height:80px;border-radius:100%;" id="device_image_explore"
+                                />
+                            </td>
+                            <th class="thsetting">
+                                <h3 id="public_name_i">
+                                    设备名称
+                                </h3>
+                            </th>
+                            <td class="tdsetting">
+                                <h4 id="device_name_explore">
+                                    花园管家
+                                </h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="thsetting">
+                                <h3 id="public_city_i">
+                                    所在城市
+                                </h3>
+                            </th>
+                            <td class="tdsetting">
+                                <h4 id="location_city_explore">
+                                </h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="thsetting">
+                                <h3 id="public_disc_i">
+                                    设备描述
+                                </h3>
+                            </th>
+                            <td class="tdsetting">
+                                <h4 id="device_creater_explore">
+                                    zheng@molmc.com
+                                </h4>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="widget_sheel">
+                        <div>
+                            <h2 id="public_widlist_i" pub class="label_normal">
+                                控件列表
+                            </h2>
+                            <div style="clear: both;">
+                            </div>
+                        </div>
+                        <ul class="list" id="widgetList_explore" style="margin-bottom:0px;">
+                            没有相关控件
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel" id="showWidget_explore" data-tab="navbar_explore" data-header="header_widget_explore" data-footer="footer">
+                    <div id="widgetPanel_explore" style="padding-top: 10px"></div>
+                </div>
+                <!-- 关联控制 -->
+                <div class="panel" data-title="graphic" id="graphic" data-tab="navbar_graphic"
+                data-header="header_graphic" data-footer="footer">
+                    <ul class="list" id="recipeList_graphic" style="margin-top:5px;">
+                        <div style="font-size: 1.5em;text-align: center;margin-top: 50%; color: darkgray; background: #F2F2F2;">
+                            <div>
+                                <a href="#createRecicp_graphic" class="fa fa-plus-circle" style="font-size: 4em;color: darkgray;margin-bottom:20px;" id=""></a>
+                            </div>
+                            <span class="empty">
+                                请点击添加联控
+                            </span>
+                        </div>
+                    </ul>
+                </div>
+                <div class="panel" data-title="showRecicp_graphic" id="showRecicp_graphic"
+                data-tab="navbar_graphic" data-header="header_showgraphic" data-footer="footer">
+                    <div id="recipeinfo_graphic" class="recipeinfobg" style="text-align:center;">
+                        <div id="picTile_graphic">
+                            <img id="triggerimg_showRecipe" style="width:80px; height: 80px;border-radius:100%;" src="">
+                            <i class="fa fa-chevron-right" style="font-size:4em;color:#0088D1;position: relative;top:-0.25em;">
+                            </i>
+                            <img id="actionimg_showRecipe" style="width:80px; height: 80px;border-radius:100%;" src="">
+                        </div>
+                        <div id="nameTile_graphic">
+                            如果每月16日在12:25,则发送邮件给hui@molmc.com
+                        </div>
+                    </div>
+                    <div class="recipeinfobg">
+                        <table>
+                            <tr>
+                                <td style="width:30px;">
+                                    <Strong id="trigger_mode_graphic">周期触发</Strong>
+                                </td>
+                                <td style="padding:0 10px;">
+                                    <span id="graphic_noticinfo_i" style="font-size:0.8em;" >
+                                        即使触发条件一直匹配，也只是间断性触发动作,频率为5分钟。适用于响应延迟较大场景，如根据土壤湿度自动浇花。
+                                    </span>
+                                </td>
+                                <td>
+                                    <input id="recipeswitch_graphic" type="checkbox" name="recipeswitch_graphic"
+                                    value="1" checked="" class="toggle" />
+                                    <label for="recipeswitch_graphic" data-on="周期" data-off="边沿" style="left:0;border-radius:2px;float: right;line-height: 16px;font-family: monospace;" id="switch_graphic">
+                                        <span style="border-radius:2px;">
+                                        </span>
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="showtrigger_graphic" class="recipeinfobg">
+                        <table cellspacing="10" style="width:100%;">
+                            <tr style="text-align:center;">
+                                <td colspan="3">
+                                    <h3>
+                                        触发事件
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_devname_i">
+                                    设备名称:
+                                </td>
+                                <td style="text-align:right;">
+                                    系统
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_widname_i">
+                                    控件名称:
+                                </td>
+                                <td style="text-align:right;">
+                                    时间
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    周期:
+                                </td>
+                                <td style="text-align:right;">
+                                    灯泡开关
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_trigger_i">
+                                    触发事件:
+                                </td>
+                                <td style="text-align:right;">
+                                    <input id="recipeTrigger_graphic" type="checkbox" name="recipeTrigger_graphic"
+                                    value="1" class="toggle" />
+                                    <label for="recipeTrigger_graphic" data-on="On" data-off="Off" style="border-radius:2px;left:50%;" id="trigger_graphic">
+                                        <span style="border-radius:2px;">
+                                        </span>
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="showaction_graphic" class="recipeinfobg">
+                        <table cellspacing="10" style="width:100%;">
+                            <tr style="text-align:center;">
+                                <td colspan="2">
+                                    <h3>
+                                        响应事件
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_actiondevname_i">
+                                    设备名称:
+                                </td>
+                                <td style="text-align:right;">
+                                    系统
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_actionwidname_i">
+                                    控件名称:
+                                </td>
+                                <td style="text-align:right;">
+                                    智能灯
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_actionsenname_i">
+                                    传感器:
+                                </td>
+                                <td style="text-align:right;">
+                                    灯泡开关
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_action_i">
+                                    响应事件:
+                                </td>
+                                <td style="text-align:right;">
+                                    <input id="recipeAction_graphic" type="checkbox" name="recipeAction_graphic"
+                                    value="1" class="toggle" />
+                                    <label for="recipeAction_graphic" data-on="On" data-off="Off" style="border-radius:2px;left:50%;" id="action_graphic">
+                                        <span style="border-radius:2px;">
+                                        </span>
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="panel" data-title="createRecicp_graphic" id="createRecicp_graphic"
+                data-tab="navbar_graphic" data-header="header_edit_graphic" data-footer="footer">
+                <div class="swiper-container-title">
+                        <h3>
+                            <div id="devname_createRecicp">设备</div>
+                            <span style="float:left;margin-left: 10px;margin-top: -21px;">设备列表:</span>
+                        </h3>
+                        
+                    </div>
+                    <div class="swiper-container-devlist">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background:url(img/userhead_default.png) no-repeat;background-size: contain;">
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar-devlist">
+                        </div>
+                    </div>
+                    <div class="swiper-container-title">
+                        <h3>                            
+                            <div id="widname_createRecicp">控件</div>
+                            <span style="float:left;margin-left: 10px;margin-top: -21px;">控件列表:</span>
+                        </h3>
+                    </div>
+                    <div class="swiper-container-widget">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background:url(img/userhead_default.png) no-repeat;background-size: contain;">
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar-widget">
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="list">
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h3>
+                                                每日
+                                            </h3>
+                                        </td>
+                                        <td rowspan="2" class="addaction">
+                                            <i class="fa fa-plus-square">
+                                            </i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel" data-title="createaction_graphic" id="createaction_graphic"
+                data-tab="navbar_graphic" data-header="header_edit_graphic" data-footer="footer">
+                    <div class="swiper-container-title">
+                        <h3>
+                            <div id="devname_createAction">设备</div>
+                            <span style="float:left;margin-left: 10px;margin-top: -21px;">设备列表:</span>
+                        </h3>
+                    </div>
+                    <div class="swiper-container-devlist">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background:url(img/userhead_default.png) no-repeat;background-size: contain;">
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar-devlist">
+                        </div>
+                    </div>
+                    <div class="swiper-container-title">
+                        <h3>
+                            <div id="widname_createAction">控件</div>
+                            <span style="float:left;margin-left: 10px;margin-top: -21px;">控件列表:</span>
+                        </h3>
+                    </div>
+                    <div class="swiper-container-widget">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background:url(img/userhead_default.png) no-repeat;background-size: contain;">
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar-widget">
+                        </div>
+                    </div>                    
+                    <div>
+                        <ul class="list">
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h3>
+                                                每日
+                                            </h3>
+                                        </td>
+                                        <td rowspan="2" class="addaction">
+                                            <i class="fa fa-plus-square">
+                                            </i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel" data-title="settingtrigger_graphic" id="settingtrigger_graphic"
+                data-tab="navbar_graphic" data-header="header_edit_graphic" data-footer="footer">
+                    <div class="recipeinfobg">
+                        <table cellspacing="10" style="width:100%;">
+                            <tr style="text-align:center;">
+                                <td colspan="3">
+                                    <h3>
+                                        触发事件
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_settriggerdevname_i">
+                                    设备名称:
+                                </td>
+                                <td style="text-align:right;">
+                                    系统
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_settriggerwidname_i">
+                                    控件名称:
+                                </td>
+                                <td style="text-align:right;">
+                                    时间
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    周期:
+                                </td>
+                                <td style="text-align:right;">
+                                    灯泡开关
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_settrigger_i">
+                                    触发事件:
+                                </td>
+                                <td style="text-align:right;">
+                                    <select name="switch" id="switch_trigger" style="width:inherit;">
+                                        <option value="On">
+                                            开
+                                        </option>
+                                        <option value="Off">
+                                            关
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a class="button block btn_large_blue" id="btn_settriggerconfirm">
+                        下一步
+                    </a>
+                </div>
+                <div class="panel" data-title="settingaction_graphic" id="settingaction_graphic"
+                data-tab="navbar_graphic" data-header="header_edit_graphic" data-footer="footer">
+                    <div class="recipeinfobg">
+                        <table cellspacing="10" style="width:100%;">
+                            <tr style="text-align:center;">
+                                <td colspan="2">
+                                    <h3>
+                                        响应事件
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_setactiondevname_i">
+                                    设备名称:
+                                </td>
+                                <td style="text-align:right;">
+                                    系统
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_setactionwidname_i">
+                                    控件名称:
+                                </td>
+                                <td style="text-align:right;">
+                                    智能灯
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_setactionsenname_i">
+                                    传感器:
+                                </td>
+                                <td style="text-align:right;">
+                                    灯泡开关
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="graphic_setaction_i">
+                                    响应事件:
+                                </td>
+                                <td style="text-align:right;">
+                                    <select name="switch" id="switch_action" style="width:inherit;">
+                                        <option value="On">
+                                            开
+                                        </option>
+                                        <option selected="" value="Off">
+                                            关
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    发送邮箱:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="email" name="email" value="hui@molmc.com" disabled="disabled"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    发送内容:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <textarea type="text" name="mailcontent" rows="2" placeholder="在这里输入发送内容">
+                                    </textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a class="button block btn_large_blue" id="btn_setactionconfirm">
+                        下一步
+                    </a>
+                </div>
+                <!-- 关于我们 -->
+                <div class="panel" data-title="关于" id="about" data-tab="navbar_about"
+                data-header="header_about" data-footer="footer">
+                    <ul class="list" style="margin-top:5px;">
+                        <li id="userinfo_about">
+                            <a href="#setting">
+                                <div id="avata_about">
+                                    <div style="padding: 10px; float:left;">
+                                        <img id="headimg" src="img/userhead_default.png" style="width:70px;height:70px;border-radius:100%;"
+                                        />
+                                    </div>
+                                    <div style="line-height: 90px;" id="account_about" class="mpressed">
+                                        molmc
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li id="introduce_about" class="border_bottom_cap">
+                            <a href="#about_us" class="fa fa-group font_size14">
+                                <span style="margin-left:10px">
+                                    关于我们
+                                </span>
+                            </a>
+                        </li>
+                        <li id="feedback_about" style="margin:5px">
+                            <a href="#feedback" class="fa fa-futbol-o font_size14">
+                                <span style="margin-left:10px;">
+                                    意见反馈
+                                </span>
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li id="versioncheck_about" class="border_bottom_cap">
+                            <a class="fa fa-circle-o-notch font_size14">
+                                <span style="margin-left:10px;" id="version_check_about">
+                                    版本检查
+                                </span>
+                                <span id="newVersionFlag" class="fa fa-circle" style="color:red; padding-left:10px;position:absolute;top:15px;display:none;">
+                                </span>
+                            </a>
+                        </li>
+                        <li id="logout_about" style="margin:5px">
+                            <a class="fa fa-power-off font_size14">
+                                <span style="margin-left:10px;">
+                                    退出
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 设置-->
+                <div class="panel" data-title="设置" id="setting" data-footer="footer">
+                    <ul class="list">
+                        <li class="limargin" style="border-bottom:1px solid #CBD2D8">
+                            <span id="name_setting_i">
+                                昵称
+                            </span>
+                            <span id="name_setting" class="floright">
+                                昵称
+                            </span>
+                        </li>
+                        <li class="limargin">
+                            <span id="account_setting_i">
+                                登录帐号
+                            </span>
+                            <span id="account_setting" class="floright">
+                                登录帐号
+                            </span>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li style="border:0">
+                            <a href="#resetpassword">
+                                <span id="chgpwd_i">
+                                    修改密码
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 关于我们 -->
+                <div class="panel" data-title="关于我们" id="about_us" data-footer="footer"
+                data-tab="navbar_about">
+                    <div class="mid" style="margin-top:20px;margin-bottom:20px">
+                        <img src="img/app_icon.png" />
+                    </div>
+                    <ul class="list" style="margin-top:5px;">
+                        <li style="border-top:0" class="border_bottom_cap">
+                            <a href="http://www.intorobot.com" target="_blank" id="about_info_i1">
+                                官方网站：www.intorobot.com
+                            </a>
+                        </li>
+                        <li id="about_info_i2" class="border_bottom_cap" style="border-bottom:0">
+                            官方微信：IntoRobot
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li id="appversion_about" class="border_bottom_cap">
+                            App版本：
+                        </li>
+                        <li id="about_info_i3" class="border_bottom_cap" style="border-bottom:0;">
+                            服务电话：+86-0755-26554422
+                        </li>
+                        <li id="about_info_i4" class="border_bottom_cap" style="border-bottom:0;display:none;">
+                            地址：深圳市南山区西丽崇文花园10栋2单元1203
+                        </li>
+                    </ul>
+                </div>
+                <!-- 意见反馈 -->
+                <div class="panel" data-title="意见反馈" id="feedback" data-footer="footer"
+                data-tab="navbar_about">
+                    <form style="margin-top:10px">
+                        <textarea rows="20" id="text_feedback" maxlength="256" placeholder="输入您的宝贵意见(大于10个字)"></textarea>
+                        <a class="button block btn_large_blue" id="btn_submit">
+                            提交
+                        </a>
+                    </form>
+                    <div style="height:20px;">
+                    </div>
+                </div>
+            </div>
+            <!-- header and footer -->
+            <header id="header_device">
+                <h1>
+                    我的设备
+                </h1>
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <a class="headerright fa fa-ellipsis-v" id="popup_adddevice">
+                </a>
+            </header>
+            <header id="header_configstep1_device">
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <h1>
+                    配置设备
+                </h1>
+                <a class="button headerright" id="btn_next" value="0">
+                    下一步
+                </a>
+            </header>
+            <header id="header_configstep_device">
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <h1>
+                    配置设备
+                </h1>
+                <a class="button headerright" id="btn_scane" value="0">
+                    扫描
+                </a>
+            </header>
+            <header id="header_explore">
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <h1>
+                    设备探索
+                </h1>
+            </header>
+            <header id="header_widget_explore">
+                <h1>
+                </h1>
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <a class="headerright fa fa-ellipsis-v" data-status="widgetList" id="popup_widList_explore">
+                </a>
+            </header>
+            <header id="header_graphic">
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <h1>
+                    关联控制
+                </h1>
+                <a href='#createRecicp_graphic' class="headerright fa fa-plus">
+                </a>
+            </header>
+            <header id="header_edit_graphic">
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <h1>
+                    创建联控
+                </h1>
+            </header>
+            <header id="header_showgraphic">
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <h1>
+                    联控明细
+                </h1>
+                <a id="save_recipe" class="button headerright">
+                    保存
+                </a>
+            </header>
+            <header id="header_about">
+                <h1>
+                    关于我们
+                </h1>
+            </header>
+            <header id="header_login">
+                <h1>
+                    登&nbsp;&nbsp;&nbsp;录
+                </h1>
+            </header>
+            <header id="header_register">
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <h1>
+                    手机注册
+                </h1>
+                <a href="#user_protocol_en" class="button headerright">
+                    用户协议
+                </a>
+            </header>
+            <header id="header_devinfo_device">
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <h1>
+                    设备信息
+                </h1>
+            </header>
+            <header id="header_editdevinfo_device">
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <h1>
+                    修改设备信息
+                </h1>
+                <a class="button headerright">
+                    保存
+                </a>
+            </header>
+            <header id="header_collectdev_device">
+                <a href="#" class="headerleft fa fa-chevron-left fa-lg">
+                </a>
+                <h1>
+                    收藏设备
+                </h1>
+            </header>
+            <footer id="footer">
+                <a href="#device" id="navbar_device" class="icon home" data-transition="fade">
+                    device
+                </a>
+                <a href="#explore" id="navbar_explore" class="icon magnifier" data-transition="fade">
+                    explore
+                </a>
+                <a href="#graphic" id="navbar_graphic" class="icon fa fa-puzzle-piece" data-transition="fade">
+                    graphic
+                </a>
+                <a href="#about" id="navbar_about" class="icon user" data-transition="fade">
+                    about
+                </a>
+                <span id="newVersionFlag_footer" class="fa fa-circle" style="color:red; padding-left:10px;position:absolute;top:3px;right:20px;display:none;">
+                </span>
+            </footer>
+        </div>
+
+        <script data-main="js/molmc/main" src="js/vendor/require.js">
+        </script>
+        <!-- vender -->
+        <script type="text/javascript" src="js/vendor/underscore-min.js">
+        </script>
+        <script type="text/javascript" src="js/vendor/mqttws31.js">
+        </script>
+        <script type="text/javascript" src="js/vendor/events.js">
+        </script>
+        <script type="text/javascript" src="js/vendor/function.js">
+        </script>
+        <!-- molmc -->
+        <script type="text/javascript" charset="utf-8" src="js/molmc/lang.switch.js">
+        </script>
+        <script type="text/javascript" src="js/molmc/api.js">
+        </script>
+        <script type="text/javascript" src="js/molmc/mqtt.js">
+        </script>
+        <script type="text/javascript" src="js/molmc/update.js">
+        </script>
+        <script type="text/javascript" src="js/molmc/app.js">
+        </script>
+        <script type="text/javascript" src="js/molmc/device.js">
+        </script>
+        <script type="text/javascript" src="js/molmc/explore.js">
+        </script>
+        <script type="text/javascript" src="js/molmc/exploreMap.js">
+        </script>
+        <script type="text/javascript" src="js/molmc/graphic.js">
+        </script>
+    </body>
+
+</html>
