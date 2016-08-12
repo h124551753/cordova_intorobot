@@ -1,8 +1,0 @@
-#widget29 #curtaincontrol{
-    margin: 0px auto;
-    background: url(../img/close.jpg) center top no-repeat;
-}
-#widget29 .open{
-    margin: 0px auto;
-    background: url(../img/open.png) center top no-repeat!important;
-}
